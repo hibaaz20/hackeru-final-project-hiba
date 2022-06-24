@@ -1,0 +1,24 @@
+.cards{
+    margin-top: 2%;
+    width: 100%;
+}
+
+.input{
+  width: 25%;
+  margin-left: 36%;
+  margin-top: 2%;
+}
+
+.search{
+  margin-top: 2%;
+
+}
+
+
+@media screen and (max-width: 1300px) {
+  .col-md-2{
+      width:25%;
+   }
+   
+
+}

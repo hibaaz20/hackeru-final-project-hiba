@@ -1,0 +1,62 @@
+
+
+
+<div class="text-center ordersTitle">
+    <h3>{{customer.userName}} Orders</h3>
+</div>
+
+   <div *ngIf="orders.length == 0" >
+        <h3 class="text-center noOrders">This user have no orders yet</h3>
+   </div>
+<div class="container">
+    <div class="basket" *ngIf="orders.length > 0">
+     
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Total</li>
+        </ul>
+      </div>
+      
+      <div *ngFor="let order of orders">
+      <div class="basket-product">
+        <div class="item">
+          <div class="product-image">
+            <img [src]="order.product.photoUrl" [alt]="order.product.productName" class="product-frame" width="100">
+          </div>
+          <div class="product-details">
+            <a href="" routerLink="/orderdetails/{{order.orderId}}"><strong>{{order.product.productName}}</strong></a>
+            <p class="orderID">Order ID - #{{order.orderId}}</p>
+          </div>
+        </div>
+        <div class="price">{{order.product.price}}</div>
+        <div class="quantity">
+            <p class="q">{{order.quantity}}</p>
+        </div>
+        <div class="subtotal">{{order.total}}</div>
+       
+      </div>
+     
+    </div>
+</div>
+</div>
+
+<div class="d-flex justify-content-center pagination" *ngIf="pagination">
+
+  <pagination
+  [boundaryLinks]="true"
+  [totalItems]="pagination.totalItems"
+  [itemsPerPage]="pagination.itemsPerPage"
+  [(ngModel)]="pagination.currentPage"
+  (pageChanged)="pageChanged($event)"
+  previousText="&lsaquo;"
+  nextText="&rsaquo;"
+  firstText="&laquo;"
+  lastText="&raquo;"
+  >
+
+</pagination>
+</div>
+

@@ -1,0 +1,130 @@
+
+  .card{
+      margin-left: 10px;
+      width: 95%;
+      margin-top: 10px;
+  }
+  
+
+  .card-footer {
+    padding: 10px 15px;
+    background-color: white;
+    border-top: none;
+  }
+  
+  .ngx-gallery {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 35px;
+
+  }
+  
+  .details{
+      margin-top: 10px;
+  }
+
+  p.border {
+      border-style: solid;
+      width: 90%;
+      height: 300px;
+      padding:10px;
+
+    }
+
+.product-details{
+    margin-top: 30px;
+}    
+
+.price-container div{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.cart{
+    background-color: rgb(213, 156, 0);
+    border-color: white;
+    float: inline-end;
+    font-size: 18px;
+    margin-top: 30px;
+
+  }
+  
+  .inline {
+    display: inline-block; 
+  }
+
+.buy{
+    background-color: rgb(40, 180, 8);
+    border-color: white;
+    float: inline-end;
+    margin-top: 30px;
+    width: 100px;
+    font-size: 18px;
+}
+
+
+
+.quantity {
+    display: inline-block;  
+    margin-top: 20px; 
+  ;}
+   
+   .quantity .input-text.qty {
+    width: 35px;
+    height: 30px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+  
+   }
+   
+   .quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top; 
+    width: 35px;
+    margin-right: 75px;
+   }
+   
+   .quantity.buttons_added input {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: none;
+  
+   }
+   
+   .quantity.buttons_added .minus,
+   .quantity.buttons_added .plus {
+    height: 30px;
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+    cursor:pointer;}
+   
+   .quantity.buttons_added .minus {
+    border-right: 0; }
+   
+   .quantity.buttons_added .plus {
+    border-left: 0; }
+   
+   .quantity.buttons_added .minus:hover,
+   .quantity.buttons_added .plus:hover {
+    background: #eeeeee; }
+   
+   .quantity input::-webkit-outer-spin-button,
+   .quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0; }
+    
+    .quantity.buttons_added .minus:focus,
+   .quantity.buttons_added .plus:focus {
+    outline: none; }
+
+
+    .total{
+        margin-top: 15px;
+    }

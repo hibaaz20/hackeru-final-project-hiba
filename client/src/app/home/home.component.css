@@ -1,0 +1,125 @@
+.logo{
+    margin-left: 1%;
+}
+
+.list{
+    margin-top: 50px;
+}
+
+.left-text{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.right-text{
+    margin-top: 50px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+a{
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+
+@media screen and (max-width:  1700px) {
+    .flower{
+        width: 10%;
+    }
+
+.left-text{
+    
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.right-text{
+   
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+    a{
+        padding-right: 5px;
+        padding-left: 5px;
+    
+    }
+    .logo{
+        width: 20%;
+        margin-left: 10%;
+    }
+    
+    
+    .list{
+        margin-top: 5%;
+    }
+  
+}
+
+ 
+@media screen and (max-width:  1500px) {
+    .flower{
+        width: 20%;
+    }
+    a{
+        padding-right: 5px;
+        padding-left: 5px;
+    
+    }
+    .logo{
+        width: 30%;
+        margin-left: 15%;
+    }
+    
+    
+    .list{
+        margin-top: 10%;
+    }
+  
+}
+
+
+@media screen and (max-width:  1000px) {
+    a{
+        padding-right: 5px;
+        padding-left: 5px;
+    
+    }
+    .logo{
+        width: 30%;
+        margin-left: 7%;
+    }
+    .list{
+        margin-top: 20%;
+    }
+    
+.left-text{
+    
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.right-text{
+   
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.flower{
+    width: 30%;
+}
+}
+
+img{
+    height: 3.8cm;
+    padding: 1%;
+}
+

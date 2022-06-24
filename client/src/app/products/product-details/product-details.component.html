@@ -1,0 +1,56 @@
+<div class="row" *ngIf="product" >
+    <div class="col-4">
+        <div class="card" >
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+
+            <div class="card-body">
+                <div>
+                    <strong>Created:</strong>
+                    <p>{{product.created | date: 'longDate'}}</p>
+                </div>
+              
+            </div>
+           
+        </div>
+    </div>
+
+    <div class="col-8 details">
+        
+        <h3>{{product.productName}}</h3>
+
+        <div class="product-details">
+            <h5>Description:</h5>
+            <p class="border">{{product.productDescription}}</p>
+        </div>
+
+        <div class="price-container">
+            
+            <div style="font-size: 20px;"> Price:</div>
+            <div style="font-size: 20px; margin-left: 5px;"> ${{product.price}} </div>
+        </div>
+
+        <div class="quantity buttons_added form-group">
+            <a style="font-size: 20px; margin-right: 10px;">Q:</a>        
+            
+            <input (click)="decQuantity(product)" type="button" value="-" class="minus">
+            <input readonly id="quantity" name="quantity" min="1" max="5" readonly  type="number"  id="quantity" value="{{quantity}}" class="input-text qty text" size="4" >
+            <input  (click)="incQuantity(product)" type="button" value="+" class="plus">
+            
+        </div> 
+        <div class="total">
+            <a style="font-size: 20px; margin-right: 10px;">Total: ${{product.total}}</a>        
+
+        </div>
+
+            <div class="inline" *ngIf="!(currentAdmin$ | async )">
+              <button href="#" class="btn btn-primary cart"  (click)="addToCart(product, $event)"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+              <button href="#" class="btn btn-primary buy"   (click)="addOrder(product)">Buy</button>
+            </div>
+
+            <div class="inline" *ngIf="(currentAdmin$ | async )">
+                <button href="#" class="btn btn-primary buy"  routerLink="/editProduct/{{product.id}}">Edit</button>
+            </div>
+          
+
+    </div>
+</div>
